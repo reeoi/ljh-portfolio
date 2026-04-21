@@ -1,0 +1,328 @@
+{
+  "personal": {
+    "name": "陆继厚",
+    "nameEn": "Lu Ji-Hou",
+    "title": "AI 美术工程师 / AIGC Animator",
+    "major": "南京邮电大学 · 动画（AIGC 方向）",
+    "gradYear": "2026 届",
+    "location": "南京 · 中国",
+    "email": "1797209815@qq.com",
+    "phone": "+86 180 6878 2892",
+    "github": "reeoi",
+    "githubUrl": "https://github.com/reeoi",
+    "resumeUrl": "/downloads/陆继厚-简历.pdf",
+    "noviUrl": "https://novi.ljhwmm.top",
+    "siteUrl": "https://ljhwmm.top"
+  },
+  "home": {
+    "heroTitle": "陆 · 继 · 厚",
+    "heroSubtitle": "个人作品集",
+    "heroTagline": "把画面感与工程力放在同一张白纸上 —— 一位做动画、写代码、调 AI 的本科生。",
+    "services": [
+      {
+        "no": "01",
+        "icon": "Cpu",
+        "title": "AIGC Workflows",
+        "zh": "ComfyUI / Flux / SD",
+        "desc": "稳定可复用的生成管线：角色一致性、批量出图、风格迁移。"
+      },
+      {
+        "no": "02",
+        "icon": "Film",
+        "title": "Animation",
+        "zh": "动漫短片 · 分镜",
+        "desc": "分镜到成片：AE / Pr / AI 插帧，配音与配乐对齐。"
+      },
+      {
+        "no": "03",
+        "icon": "Palette",
+        "title": "Art × Engineering",
+        "zh": "美术 × 工程",
+        "desc": "把画面需求翻译为节点图与代码，交付可落地工具。"
+      }
+    ],
+    "ctaTitle": "做点值得留下的东西。",
+    "ctaDesc": "可承接：AIGC 工作流搭建、动画短片协作、Novi 平台联动，以及 2026 届校招机会。"
+  },
+  "about": {
+    "subtitle": "一个想把画面和工程放到一起的人。",
+    "intro": [
+      "你好，我是 **陆继厚**，目前就读于 **南京邮电大学 · 动画专业（AIGC 方向）**，2026 届本科。",
+      "我把自己定位为 *AI 美术工程师* —— 既能在画面上理解角色、氛围、镜头；也能写出稳定可维护的 ComfyUI 工作流、前端与桌面端工具。",
+      "相较于只会调 prompt，我更希望把\"画面直觉\"翻译成可被团队复用的 **节点图 · 代码 · 流程**，让美术与工程在同一张纸上说话。"
+    ],
+    "stats": [
+      {
+        "k": "4+",
+        "v": "Animation Shorts",
+        "zh": "动漫短片"
+      },
+      {
+        "k": "5+",
+        "v": "ComfyUI Workflows",
+        "zh": "工作流"
+      },
+      {
+        "k": "1",
+        "v": "Independent Product",
+        "zh": "Novi 平台"
+      }
+    ],
+    "timeline": [
+      {
+        "year": "2022 — 2026",
+        "title": "南京邮电大学 · 动画（AIGC 方向）",
+        "desc": "本科；课程涵盖原画、分镜、三维、AIGC 动画管线；学业绩点稳定靠前。",
+        "icon": "GraduationCap"
+      },
+      {
+        "year": "2024",
+        "title": "动漫短片 · 独立制作",
+        "desc": "完成多部动漫短片，从分镜、建模到后期剪辑独立完成，探索 AI 插帧与风格迁移。",
+        "icon": "Sparkles"
+      },
+      {
+        "year": "2025",
+        "title": "分镜辅助工具 · 桌面端",
+        "desc": "使用 Electron / Node 构建分镜辅助工具（31 MB exe），面向动画从业者。",
+        "icon": "Calendar"
+      },
+      {
+        "year": "2025 — Now",
+        "title": "Novi · AI 创作平台",
+        "desc": "独立开发并部署的小说 / 剧本 AI 协作平台，Next.js + Vercel + 多模型聚合。",
+        "icon": "MapPin"
+      }
+    ],
+    "preferred": [
+      "ComfyUI / SD / Flux 工作流搭建",
+      "角色一致性 · 批量出图体系",
+      "AI 动画管线 · 分镜自动化",
+      "Web 端创作平台 / 桌面工具"
+    ]
+  },
+  "skills": [
+    {
+      "name": "ComfyUI / SD / Flux",
+      "level": 95,
+      "color": "sakura"
+    },
+    {
+      "name": "AI 动画管线 (AIGC)",
+      "level": 90,
+      "color": "electric"
+    },
+    {
+      "name": "After Effects / 剪辑合成",
+      "level": 82,
+      "color": "neon"
+    },
+    {
+      "name": "Next.js / TypeScript",
+      "level": 85,
+      "color": "electric"
+    },
+    {
+      "name": "Python / FastAPI",
+      "level": 78,
+      "color": "sakura"
+    },
+    {
+      "name": "Blender / 3D 基础",
+      "level": 70,
+      "color": "neon"
+    },
+    {
+      "name": "Electron / 桌面端",
+      "level": 72,
+      "color": "electric"
+    },
+    {
+      "name": "Figma / UI 设计",
+      "level": 75,
+      "color": "sakura"
+    }
+  ],
+  "categories": [
+    "全部",
+    "ComfyUI 工作流",
+    "动漫短片",
+    "Novi 平台",
+    "桌面工具"
+  ],
+  "works": [
+    {
+      "slug": "wf-anime-production",
+      "title": "动漫分镜生产工作流",
+      "description": "从分镜草稿到最终成片的一体化 ComfyUI 工作流，覆盖角色一致性、镜头切换与批量渲染。",
+      "category": "ComfyUI 工作流",
+      "type": "image",
+      "cover": "/images/comfyui/workflow-anime-production.png",
+      "tags": [
+        "ComfyUI",
+        "SDXL",
+        "Anime",
+        "Pipeline"
+      ]
+    },
+    {
+      "slug": "wf-2d-to-3d",
+      "title": "2D → 3D 场景重建",
+      "description": "基于参考 2D 原画自动重建可调镜头的 3D 场景信息，服务于多视角复用。",
+      "category": "ComfyUI 工作流",
+      "type": "image",
+      "cover": "/images/comfyui/workflow-2d-to-3d.png",
+      "tags": [
+        "ComfyUI",
+        "3D",
+        "Depth",
+        "ControlNet"
+      ]
+    },
+    {
+      "slug": "wf-3d-to-2d",
+      "title": "3D → 2D 动画风格化",
+      "description": "把 3D 渲染结果风格化为稳定的二维动画画面，适配番剧质感。",
+      "category": "ComfyUI 工作流",
+      "type": "image",
+      "cover": "/images/comfyui/workflow-3d-to-2d-scene.png",
+      "tags": [
+        "ComfyUI",
+        "Style",
+        "Anime"
+      ]
+    },
+    {
+      "slug": "wf-3d-to-2d-v2",
+      "title": "3D → 2D 场景 · v2",
+      "description": "迭代版本：引入更细腻的轮廓控制与光影匹配，提高远景稳定度。",
+      "category": "ComfyUI 工作流",
+      "type": "image",
+      "cover": "/images/comfyui/workflow-3d-to-2d-scene-v2.png",
+      "tags": [
+        "ComfyUI",
+        "LineArt",
+        "Lighting"
+      ]
+    },
+    {
+      "slug": "wf-style-anime",
+      "title": "动漫风格迁移",
+      "description": "专注于角色外观与画风统一的风格迁移节点图，支持批量处理。",
+      "category": "ComfyUI 工作流",
+      "type": "image",
+      "cover": "/images/comfyui/workflow-style-anime.png",
+      "tags": [
+        "ComfyUI",
+        "Style Transfer",
+        "Batch"
+      ]
+    },
+    {
+      "slug": "anime-1",
+      "title": "动漫短片 · 序章",
+      "description": "自制动漫短片之一：AI 辅助绘制原画 + 传统动画工艺后期合成。",
+      "category": "动漫短片",
+      "type": "video",
+      "cover": "/videos/anime-1.mp4",
+      "tags": [
+        "Anime",
+        "AE",
+        "AI Art"
+      ]
+    },
+    {
+      "slug": "anime-2",
+      "title": "动漫短片 · 追光",
+      "description": "探索 AI 插帧与运动补偿在二维动画中的应用。",
+      "category": "动漫短片",
+      "type": "video",
+      "cover": "/videos/anime-2.mp4",
+      "tags": [
+        "Anime",
+        "Motion",
+        "AIGC"
+      ]
+    },
+    {
+      "slug": "anime-3",
+      "title": "动漫短片 · 黄昏",
+      "description": "氛围向短片：色彩脚本 · 配乐 · 镜头节奏一体化打磨。",
+      "category": "动漫短片",
+      "type": "video",
+      "cover": "/videos/anime-3.mp4",
+      "tags": [
+        "Anime",
+        "Mood",
+        "Color"
+      ]
+    },
+    {
+      "slug": "anime-4",
+      "title": "动漫短片 · 夜行",
+      "description": "实验性夜景镜头：AI 生成背景 + 人物手绘 + 合成流程。",
+      "category": "动漫短片",
+      "type": "video",
+      "cover": "/videos/anime-4.mp4",
+      "tags": [
+        "Anime",
+        "Night",
+        "Composite"
+      ]
+    },
+    {
+      "slug": "novi-home",
+      "title": "Novi · 首页",
+      "description": "独立开发并部署的 AI 小说/剧本创作平台，聚合多家大模型。",
+      "category": "Novi 平台",
+      "type": "image",
+      "cover": "/images/novi/novi-1.png",
+      "tags": [
+        "Next.js",
+        "Vercel",
+        "LLM"
+      ],
+      "liveUrl": "https://novi.ljhwmm.top"
+    },
+    {
+      "slug": "novi-editor",
+      "title": "Novi · 创作工作台",
+      "description": "章节编辑、人物卡、大纲、AI 续写一体化，面向长文创作。",
+      "category": "Novi 平台",
+      "type": "image",
+      "cover": "/images/novi/novi-2.png",
+      "tags": [
+        "Editor",
+        "LLM",
+        "UX"
+      ],
+      "liveUrl": "https://novi.ljhwmm.top"
+    },
+    {
+      "slug": "novi-gallery",
+      "title": "Novi · 作品库",
+      "description": "作品沉淀与二次创作入口，打通从生成到分享的链路。",
+      "category": "Novi 平台",
+      "type": "image",
+      "cover": "/images/novi/novi-3.png",
+      "tags": [
+        "Gallery",
+        "Share"
+      ],
+      "liveUrl": "https://novi.ljhwmm.top"
+    },
+    {
+      "slug": "nine-grid-storyboard",
+      "title": "九宫格分镜 · 桌面工具",
+      "description": "独立开发的分镜辅助工具（Windows 桌面端），把分镜思维沉淀为可复用流程。安装包整理中，即将开放下载。",
+      "category": "桌面工具",
+      "type": "exe",
+      "cover": "/images/comfyui/workflow-anime-production.png",
+      "tags": [
+        "Electron",
+        "Storyboard",
+        "Win64"
+      ]
+    }
+  ]
+}

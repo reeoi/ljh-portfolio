@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans:  'Inter', 'Noto Sans SC', system-ui, sans-serif;
+  --font-serif: 'Fraunces', 'Noto Serif SC', ui-serif, serif;
+  --font-mono:  'JetBrains Mono', ui-monospace, monospace;
+
+  --paper-50:  #FFFDFA;
+  --paper-100: #FAF7F2;
+  --paper-200: #F5EFE6;
+  --ink-900:   #1B1510;
+  --ink-800:   #2B2118;
+  --ink-700:   #3F372E;
+  --amber-500: #C99B6F;
+  --amber-600: #A67C52;
+  --terracotta-500: #B25E4B;
+}
+
+html, body {
+  background: var(--paper-100);
+  color: var(--ink-800);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(900px 500px at 12% -6%, rgba(212,163,115,0.20), transparent 60%),
+    radial-gradient(800px 500px at 92% 8%, rgba(178,94,75,0.12), transparent 60%),
+    radial-gradient(1000px 700px at 50% 120%, rgba(231,197,154,0.18), transparent 60%),
+    var(--paper-100);
+}
+
+@layer utilities {
+  .font-display { font-family: var(--font-serif); }
+  .font-serif   { font-family: var(--font-serif); }
+
+  .text-hair    { color: var(--ink-500, #80766B); }
+  .divide-hair  > * + * { border-top: 1px solid rgba(27,21,16,0.08); }
+  .border-hair  { border-color: rgba(27,21,16,0.10); }
+
+  /* editorial 超大字 */
+  .headline-xxl {
+    font-family: var(--font-serif);
+    font-weight: 300;
+    letter-spacing: -0.035em;
+    line-height: 0.92;
+  }
+  .headline-xxl em {
+    font-style: italic;
+    font-weight: 300;
+    color: var(--terracotta-500);
+  }
+
+  /* 暖色文字渐变（只用在点睛位置） */
+  .text-gradient {
+    background: linear-gradient(90deg, #A67C52 0%, #B25E4B 55%, #C99B6F 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .text-gradient-static { /* 兼容旧引用 */
+    background: linear-gradient(90deg, #A67C52, #B25E4B, #C99B6F);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* 纸质磨砂卡 */
+  .glass {
+    background: rgba(255,253,250,0.75);
+    backdrop-filter: blur(8px) saturate(1.05);
+    -webkit-backdrop-filter: blur(8px) saturate(1.05);
+    border: 1px solid rgba(27,21,16,0.08);
+  }
+
+  /* 链接下划线动画（editorial 标配） */
+  .link-underline {
+    background-image: linear-gradient(currentColor,currentColor);
+    background-size: 0% 1px;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    transition: background-size .45s cubic-bezier(.2,.7,.2,1);
+  }
+  .link-underline:hover { background-size: 100% 1px; }
+
+  .scrollbar-thin::-webkit-scrollbar { width: 6px; height: 6px; }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: rgba(166,124,82,0.35); border-radius: 3px;
+  }
+
+  /* 纸质轻噪点（SVG turbulence inline），叠在 body 上造纸质感 */
+  .bg-paper-grain {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240' viewBox='0 0 240 240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.17  0 0 0 0 0.13  0 0 0 0 0.09  0 0 0 0.22 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+    background-size: 240px 240px;
+    mix-blend-mode: multiply;
+  }
+}
+
+::selection { background: rgba(178,94,75,0.25); color: #1B1510; }
