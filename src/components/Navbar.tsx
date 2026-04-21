@@ -23,6 +23,9 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', on);
   }, []);
 
+  // /edit 后台使用自己的顶部栏，隐藏主站导航以免重合
+  if (pathname?.startsWith('/edit')) return null;
+
   return (
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-colors duration-500 ${

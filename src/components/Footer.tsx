@@ -1,8 +1,12 @@
+'use client';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { Mail, Phone, ExternalLink, FileDown, Github } from 'lucide-react';
 import { PERSONAL } from '@/lib/content';
 
 export default function Footer() {
+  const pathname = usePathname();
+  if (pathname?.startsWith('/edit')) return null;
   const telHref = `tel:${PERSONAL.phone.replace(/\s+/g, '')}`;
   return (
     <footer className="mt-32 border-t border-hair bg-paper-50/60">
