@@ -103,34 +103,36 @@ export default function EditPage() {
   if (!data) return <Center><p>无数据</p></Center>;
 
   return (
-    <div className="min-h-screen bg-paper-50 text-ink-900">
-      <header className="sticky top-0 z-20 border-b border-ink-200 bg-paper-50/95 backdrop-blur">
-        <div className="max-w-[1400px] mx-auto px-6 h-14 flex items-center justify-between">
-          <div className="flex items-center gap-4">
-            <span className="font-display italic text-[22px]">LJH · 编辑器</span>
-            <nav className="flex gap-1 text-sm">
-              {(['works', 'personal', 'home', 'about', 'skills', 'raw'] as const).map(k => (
-                <button key={k} onClick={() => setTab(k)}
-                        className={`px-3 py-1.5 rounded ${tab === k ? 'bg-ink-900 text-paper-50' : 'hover:bg-paper-200'}`}>
-                  {labelOf(k)}
-                </button>
-              ))}
-            </nav>
-          </div>
-          <div className="flex items-center gap-3 text-sm">
-            <label className="flex items-center gap-1.5 cursor-pointer select-none">
+    <div className="min-h-screen bg-paper-100 text-ink-800">
+      <header className="sticky top-0 z-20 border-b border-ink-300 bg-paper-50/95 backdrop-blur">
+        {/* 第一行：品牌 + 全局操作 */}
+        <div className="max-w-[1400px] mx-auto px-6 pt-3 pb-2 flex flex-wrap items-center justify-between gap-y-2 gap-x-4">
+          <span className="font-display italic text-[22px] text-ink-900">LJH · 编辑器</span>
+          <div className="flex items-center gap-3 text-sm flex-wrap">
+            <label className="flex items-center gap-1.5 cursor-pointer select-none text-ink-700">
               <input type="checkbox" checked={pushGithub} disabled={!githubConfigured}
                      onChange={(e) => setPushGithub(e.target.checked)} />
               推送 GitHub{!githubConfigured && ' (未配置)'}
             </label>
             <input placeholder="commit 说明（可选）" value={commitMsg} onChange={(e) => setCommitMsg(e.target.value)}
-                   className="w-56 px-3 py-1.5 rounded border border-ink-200 bg-paper-100 focus:outline-none focus:border-amber-600" />
+                   className="w-56 px-3 py-1.5 rounded border border-ink-300 bg-paper-100 text-ink-900 placeholder:text-ink-500 focus:outline-none focus:border-amber-500" />
             <button onClick={doSave} disabled={saving}
-                    className="px-4 py-1.5 rounded bg-amber-600 text-paper-50 font-medium hover:bg-amber-700 disabled:opacity-50">
+                    className="px-4 py-1.5 rounded bg-amber-500 text-paper-100 font-medium hover:bg-amber-400 disabled:opacity-50">
               {saving ? '保存中…' : '保存'}
             </button>
-            <button onClick={doLogout} className="px-3 py-1.5 rounded border border-ink-200 hover:bg-paper-200">登出</button>
+            <button onClick={doLogout} className="px-3 py-1.5 rounded border border-ink-300 text-ink-700 hover:bg-paper-200">登出</button>
           </div>
+        </div>
+        {/* 第二行：分栏 tabs（可横向滚动，避免重合） */}
+        <div className="max-w-[1400px] mx-auto px-6 border-t border-ink-300/60">
+          <nav className="flex gap-1 text-sm overflow-x-auto py-2 scrollbar-thin">
+            {(['works', 'personal', 'home', 'about', 'skills', 'raw'] as const).map(k => (
+              <button key={k} onClick={() => setTab(k)}
+                      className={`px-3 py-1.5 rounded whitespace-nowrap transition-colors ${tab === k ? 'bg-amber-500 text-paper-100' : 'text-ink-700 hover:bg-paper-200'}`}>
+                {labelOf(k)}
+              </button>
+            ))}
+          </nav>
         </div>
         {saveMsg && <div className="max-w-[1400px] mx-auto px-6 pb-2 text-[13px] text-ink-600">{saveMsg}</div>}
       </header>
