@@ -11,7 +11,7 @@ function env() {
   return {
     pat: process.env.GITHUB_PAT || '',
     owner: process.env.GITHUB_OWNER || 'reeoi',
-    repo: process.env.GITHUB_REPO || 'portfolio-ljh',
+    repo: process.env.GITHUB_REPO || 'ljh-portfolio',
     branch: process.env.GITHUB_BRANCH || 'main',
     file: process.env.GITHUB_FILE || 'src/content/site.json',
   };
