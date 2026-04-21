@@ -2,10 +2,11 @@ import Link from 'next/link';
 import {
   Calendar, MapPin, GraduationCap, Sparkles,
   Cpu, Film, Palette, Code2, Briefcase, Star, Award, Heart,
+  type LucideIcon,
 } from 'lucide-react';
 import { ABOUT, PERSONAL } from '@/lib/content';
 
-const ICONS: Record<string, React.ComponentType<{ size?: number; className?: string; strokeWidth?: number }>> = {
+const ICONS: Record<string, LucideIcon> = {
   Calendar, MapPin, GraduationCap, Sparkles, Cpu, Film, Palette, Code2, Briefcase, Star, Award, Heart,
 };
 

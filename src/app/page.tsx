@@ -6,12 +6,13 @@ import {
   ArrowUpRight,
   Cpu, Film, Palette,
   Code2, Sparkles, PenTool, Music, Video, Box,
+  type LucideIcon,
 } from 'lucide-react';
 import { WORKS, SKILLS, HOME, PERSONAL } from '@/lib/content';
 
 const featured = WORKS.slice(0, 6);
 
-const ICONS: Record<string, React.ComponentType<{ size?: number; className?: string; strokeWidth?: number }>> = {
+const ICONS: Record<string, LucideIcon> = {
   Cpu, Film, Palette, Code2, Sparkles, PenTool, Music, Video, Box,
 };
 
